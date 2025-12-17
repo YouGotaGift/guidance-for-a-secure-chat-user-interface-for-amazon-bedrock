@@ -523,7 +523,8 @@ const ChatComponent = ({ user, onLogout, onConfigEditorClick }) => {
                     />
                   }
                 >
-                  {(message.text || '').split('\n').map((line, i) => (
+                  { console.log("Sk inside Debug", message); }
+                  {message?.text && (message.text).split('\n').map((line, i) => (
                     <ReactMarkdown
                       key={'md-rendering' + i}
                       rehypePlugins={[rehypeRaw]} // Enables HTML parsing
