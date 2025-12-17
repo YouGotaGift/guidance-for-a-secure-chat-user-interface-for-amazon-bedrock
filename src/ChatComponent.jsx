@@ -522,7 +522,7 @@ const ChatComponent = ({ user, onLogout, onConfigEditorClick }) => {
                     />
                   }
                 >
-                  {message.text.split('\n').map((line, i) => (
+                  {(message.text || '').split('\n').map((line, i) => (
                     <ReactMarkdown
                       key={'md-rendering' + i}
                       rehypePlugins={[rehypeRaw]} // Enables HTML parsing
