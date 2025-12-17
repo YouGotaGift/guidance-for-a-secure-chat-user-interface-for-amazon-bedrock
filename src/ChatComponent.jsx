@@ -523,7 +523,7 @@ const ChatComponent = ({ user, onLogout, onConfigEditorClick }) => {
                     />
                   }
                 >
-                  { console.log("Sk inside Debug", message); }
+                  { console.log("Debug", message?.text) }
                   {message?.text && (message.text).split('\n').map((line, i) => (
                     <ReactMarkdown
                       key={'md-rendering' + i}
