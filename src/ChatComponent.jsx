@@ -77,8 +77,6 @@ const ChatComponent = ({ user, onLogout, onConfigEditorClick }) => {
     setSessions(sessionData);
   }, [sessionId]);
 
-  console.log("Sessions", sessions);
-
   /**
   * Scrolls the chat window to the most recent message
   * Uses smooth scrolling behavior for better user experience
